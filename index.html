@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Case Changer</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <header>
+        <p>Text Case Changer</p>
+    </header>
+    <main>
+        <input type="text" name="text" id="text" placeholder="Enter text here:">
+        <div>
+            <button onclick="lower()">lower case</button>
+            <button onclick="upper()">UPPER CASE</button>
+            <button onclick="fence()">FeNcE CaSe</button>
+            <button onclick="fence(true)">rEvErSe fEnCe cAsE</button>
+            <button onclick="capital('. ')">Sentence case</button>
+            <button onclick="capital(' ')">Capital Case</button>
+        </div>
+        <div>
+            <button onclick="document.getElementById('text').value = ''">Clear</button>
+            <button onclick="copy()">Copy</button>
+        </div>
+    </main>
+    <script src="js\sript.js"></script>
+</body>
+</html>
